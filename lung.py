@@ -4,6 +4,7 @@ import joblib
 import time
 import matplotlib.pyplot as plt
 import numpy as np
+import koreanize_matplotlib
 
 # 1. 페이지 설정
 st.set_page_config(
@@ -12,9 +13,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# 한글 폰트 깨짐 방지 및 마이너스 기호 설정
-plt.rc('font', family='Malgun Gothic') 
-plt.rcParams['axes.unicode_minus'] = False
 
 # 커스텀 CSS (세련된 다크/블루 테마)
 st.markdown("""
